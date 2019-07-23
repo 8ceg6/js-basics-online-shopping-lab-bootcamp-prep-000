@@ -4,19 +4,28 @@ function getCart() {
  return cart;
 }
 
-function setCart(c) {
-  cart = c;
+function setCart(c) 
+  cart = c{
+            
+  
   return cart;
 }
 
 function addToCart(item) {
- // write your code here
+      
+     var price = Math.floor(100*Math.random());
+     var itemName = {[item]: price};
+     cart.push(itemName); 
+     console.log(`${item} has been added to your cart.`);
+     addToCart('bananas');
+     return cart;
+     
 }
 
 function viewCart() {
   // write your code here
 }
-
+ 
 function total() {
   // write your code here
 }
